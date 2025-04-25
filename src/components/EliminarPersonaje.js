@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { deletePersonaje } from '../api';
+import ListaPersonajes from './ListaPersonajes';
 
 function EliminarPersonaje() {
     const [idEliminar, setIdEliminar] = useState('');
@@ -26,6 +27,7 @@ function EliminarPersonaje() {
     return (
         <div>
             <h2>Eliminar Personaje</h2>
+            <ListaPersonajes></ListaPersonajes>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label>ID del Personaje a Eliminar:</label>
